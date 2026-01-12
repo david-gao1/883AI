@@ -1,0 +1,7 @@
+SFMedu: Structrue From Motion for Education Purpose
+
+
+This code demonstrates how a traditional structure from motion pipeline is done and how to compute a dense point cloud by matching propagation in a simplest way. It is mainly designed for teaching a computer vision lecture at Princeton. Please check the slides and the homework assignment together with this code release. Although it is for education purpose, it is implemented in a nice way that it actually works for real photos. It is just probably quite slow compared to more optimized system, such as Bundler from Noah Snavely.
+
+Usage: run SFMedu2.m in Matlab.
+
