@@ -4,7 +4,14 @@ from builtins import range
 from six.moves import cPickle as pickle
 import numpy as np
 import os
-from scipy.misc import imread
+try:
+    from scipy.misc import imread
+except ImportError:
+    # scipy.misc.imread is deprecated, use PIL instead
+    from PIL import Image
+    def imread(path):
+        img = Image.open(path)
+        return np.array(img)
 import platform
 
 def load_pickle(f):
