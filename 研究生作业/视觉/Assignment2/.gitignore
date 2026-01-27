@@ -1,0 +1,8 @@
+*.swp
+*.pyc
+.env/*
+*.ipynb_checkpoints/*
+
+# gitignore the built release.
+
+cs231n/cifar-10-batches-py
