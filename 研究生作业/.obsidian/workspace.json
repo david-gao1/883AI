@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "73e2560d424b294a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e62e759a0f7958dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45d351a091061071",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "视觉/Assignment3/项目报告.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目报告"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b501fcd05af1fc72",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9454981251c0180",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93972f3cbbf36037",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "284c1df50051fd99",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "25cb121d7996d595",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "997f3a557bf8135b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9baa71ef12805d6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ff1b188ed20aece",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "人工智能原理与应用/花卉识别/docs/实验报告.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "实验报告 的反向链接列表"
+            }
+          },
+          {
+            "id": "92afcd6fae3ae292",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "人工智能原理与应用/花卉识别/docs/实验报告.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "实验报告 的出链列表"
+            }
+          },
+          {
+            "id": "d00253027de82f82",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4535a6d9a458dc63",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "a5ac046d5172478e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "人工智能原理与应用/花卉识别/docs/实验报告.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "实验报告 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "45d351a091061071",
+  "lastOpenFiles": [
+    "视觉/归档.zip",
+    "视觉/Assignment3/results/experiment_display.png",
+    "视觉/Assignment3/results/experiment_display_1-9.png",
+    "视觉/Assignment3/raw_data/img.png",
+    "视觉/A2-高亮-2025Z8020682064.zip",
+    "视觉/A2-高亮-2025Z.zip",
+    "视觉/A2-高亮-2025.zip",
+    "视觉/高亮-Assignment2.zip",
+    "视觉/Assignment2.zip",
+    "视觉/项目报告.pdf",
+    "人工智能原理与应用/倒立摆/实验报告.md",
+    "人工智能原理与应用/倒立摆/实践指南.md",
+    "人工智能原理与应用/倒立摆/核心理论与业务设计.md",
+    "人工智能原理与应用/倒立摆/PPO算法完整教程.md",
+    "人工智能原理与应用/倒立摆/ppo_training_results.png",
+    "人工智能原理与应用/倒立摆/训练阶段识别方法.md",
+    "人工智能原理与应用/倒立摆/截断机制详解.md",
+    "人工智能原理与应用/花卉识别/docs/优化效果分析.md",
+    "人工智能原理与应用/花卉识别/docs/问题分析与解决方案.md",
+    "人工智能原理与应用/花卉识别/docs/实验报告.md",
+    "人工智能原理与应用/花卉识别/docs/技术文档提示词.md",
+    "人工智能原理与应用/花卉识别/code/__pycache__/utils.cpython-38.pyc",
+    "人工智能原理与应用/花卉识别/code/__pycache__/evaluator.cpython-38.pyc",
+    "人工智能原理与应用/花卉识别/code/__pycache__/trainer.cpython-38.pyc",
+    "人工智能原理与应用/花卉识别/docs/实践指南.md",
+    "人工智能原理与应用/花卉识别/docs/提示词-简洁版.md",
+    "人工智能原理与应用/花卉识别/docs/技术文档写作提示词模板.md"
+  ]
+}

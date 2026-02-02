@@ -42,7 +42,7 @@ class PPOConfig:
     device: Optional[torch.device] = None
     
     # 可视化配置
-    enable_visualization: bool = False
+    enable_visualization: bool = True
     save_plots: bool = True
     plot_filename: str = 'ppo_training_results.png'
     
@@ -355,6 +355,10 @@ class PPOTrainer:
             transition_dict['rewards'].append(reward)
             transition_dict['dones'].append(done)
             
+            # 可视化（如果启用）
+            if self.config.enable_visualization:
+                self._render_frame()
+            
             state = next_state
             episode_return += reward
         
@@ -362,6 +366,28 @@ class PPOTrainer:
         self.agent.update(transition_dict)
         
         return episode_return
+    
+    def _render_frame(self) -> None:
+        """
+        渲染当前帧（用于可视化）
+        对应notebook中的可视化逻辑：if hasattr(env, 'render') and bVis
+        """
+        try:
+            if hasattr(self.environment.env, 'render'):
+                frame = self.environment.env.render()
+                if frame is not None:
+                    # 在非notebook环境中，使用简单的显示方式
+                    # 注意：在notebook中使用IPython.display.clear_output，这里使用plt
+                    plt.figure(figsize=(6, 4))
+                    plt.imshow(frame)
+                    plt.axis('off')
+                    plt.title('CartPole-v1 Training')
+                    plt.tight_layout()
+                    plt.pause(0.05)  # 控制渲染速度（对应notebook中的time.sleep(0.05)）
+                    plt.close()  # 关闭图形以释放内存
+        except Exception:
+            # 如果渲染失败，静默处理（避免中断训练）
+            pass
     
     def get_statistics(self) -> Dict[str, float]:
         """
@@ -455,18 +481,57 @@ class ResultVisualizer:
 def main():
     """主函数"""
     # 创建配置
+    # enable_visualization: 设置为True可以显示训练过程中的动画（类似notebook中的bVis=True）
     config = PPOConfig(
         env_name='CartPole-v1',
         seed=0,
         num_episodes=100,
-        enable_visualization=False,
+        enable_visualization=True,  # 设置为True开启实时动画显示
         save_plots=True
     )
     
     # 创建训练器
     trainer = PPOTrainer(config)
     
-    # 训练
+    # 训练（如果enable_visualization=True，会在训练过程中显示动画）
+    return_list = trainer.train()
+    
+    # 获取统计信息
+    stats = trainer.get_statistics()
+    
+    # 可视化结果
+    visualizer = ResultVisualizer(config)
+    visualizer.plot_results(return_list)
+    visualizer.print_statistics(stats)
+    
+    # 关闭环境
+    trainer.environment.close()
+    
+    return return_list, stats
+
+
+def train_with_visualization():
+    """
+    带可视化的训练函数（对应notebook中的 bVis = True）
+    
+    使用示例：
+
+        bVis = True  # set True to turn on animation
+        return_list = train_with_visualization()
+    """
+    # 创建配置（启用可视化）
+    config = PPOConfig(
+        env_name='CartPole-v1',
+        seed=0,
+        num_episodes=100,
+        enable_visualization=True,  # 开启实时动画显示
+        save_plots=True
+    )
+    
+    # 创建训练器
+    trainer = PPOTrainer(config)
+    
+    # 训练（会显示实时动画）
     return_list = trainer.train()
     
     # 获取统计信息
