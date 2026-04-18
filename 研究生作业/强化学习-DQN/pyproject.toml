@@ -1,0 +1,14 @@
+[project]
+name = "rl-homework-dqn"
+version = "0.1.0"
+description = "强化学习第二次作业：使用 DQN 训练 CartPole-v1"
+requires-python = ">=3.10"
+dependencies = [
+    "gymnasium>=1.0.0",
+    "matplotlib>=3.8.0",
+    "numpy>=1.24.0",
+    "torch>=2.2.0",
+]
+
+[tool.uv]
+package = false
